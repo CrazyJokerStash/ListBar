@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey">
+
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="43dp"
+        android:layout_toLeftOf="@+id/qone"
+        android:layout_toStartOf="@+id/qone" />
+
+    <TextView
+        android:id="@+id/qone"
+        android:layout_width="50dp"
+        android:layout_height="300dp"
+        android:layout_alignBaseline="@+id/one"
+        android:layout_alignBottom="@+id/one"
+        android:layout_alignEnd="@+id/spinner"
+        android:layout_alignRight="@+id/spinner"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="L'abus d'alcool est dangereux pour la santé, consommez avec modération"
+        android:textColor="@color/colorWhite"
+        android:textSize="10dp" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginBottom="14dp">
+    </Spinner>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:inputType="number"
+        android:background="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="72dp"
+        android:text="Enregistrer" />
+
+</RelativeLayout>
